@@ -1,0 +1,20 @@
+<h3>Add a New Salad Recipe</h3>
+<%= form_with model: @salad do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <br>
+
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+
+    <br>
+
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+
+    <br>
+
+    <%= form.submit 'Add Salad' %>
+
+<% end %>

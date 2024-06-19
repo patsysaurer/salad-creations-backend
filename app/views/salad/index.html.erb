@@ -1,0 +1,8 @@
+<h1>Salad Creations</h1>
+
+<ul>
+    <% @salads.each do |salad| %>
+    <li><%= salad.name %></li>
+    <p><%= link_to 'New Salad', new_salad_path %></p>
+    <% end %>
+</ul>
